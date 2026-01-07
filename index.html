@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk Heart Counseling</title>
+  <meta name="description" content="Talk Heart Counseling offers compassionate therapy services including individual therapy, art therapy, EMDR, and Jungian analysis with Lisa Marie Paradis, LPCC in a safe, healing space.">
+  <meta name="author" content="Lisa Marie Paradis, LPCC">
+  <meta property="og:title" content="Talk Heart Counseling - Lisa Marie Paradis, LPCC">
+  <meta property="og:description" content="A safe space for healing and transformation through depth psychology and holistic therapy.">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Talk Heart Counseling",
+    "description": "Compassionate therapy services including individual therapy, art therapy, EMDR, dream work, and Jungian analysis",
+    "provider": {
+      "@type": "Person",
+      "name": "Lisa Marie Paradis",
+      "jobTitle": "Licensed Professional Clinical Counselor",
+      "credential": "LPCC"
+    },
+    "email": "lisamarieparadis@gmail.com",
+    "telephone": "+1-505-859-3077",
+    "medicalSpecialty": [
+      "Psychotherapy",
+      "Art Therapy",
+      "EMDR",
+      "Play Therapy",
+      "Jungian Analysis"
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&amp;family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+      box-sizing: border-box;
+    }
+    
+    .heading-font {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .app-container {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #2d1b4e 0%, #4a2c5e 25%, #5d4a7c 50%, #3d2a52 75%, #2d1b4e 100%);
+      position: relative;
+    }
+    
+    .max-width-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .max-width-container-lg {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .max-width-container-md {
+      max-width: 896px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card-glow {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .card-glow:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(221, 188, 255, 0.3);
+      transform: translateY(-2px);
+    }
+    
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: twinkle 3s infinite;
+    }
+    
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: scale(1.02);
+    }
+    
+    .moon {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), rgba(180, 160, 200, 0.08));
+      box-shadow: 0 0 40px rgba(221, 188, 255, 0.2);
+      top: 10%;
+      right: 10%;
+      opacity: 0.6;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    @media (min-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    
+    section {
+      padding: 3rem 1.5rem;
+    }
+    
+    @media (min-width: 768px) {
+      section {
+        padding: 4rem 1.5rem;
+      }
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    a:hover {
+      opacity: 0.8;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="app-container"><!-- Decorative stars -->
+   <div class="star" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+   <div class="star" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+   <div class="star" style="top: 40%; left: 25%; animation-delay: 2s;"></div>
+   <div class="star" style="top: 60%; left: 70%; animation-delay: 1.5s;"></div>
+   <div class="star" style="top: 80%; left: 40%; animation-delay: 0.5s;"></div>
+   <div class="star" style="top: 15%; left: 50%; animation-delay: 2.5s;"></div>
+   <div class="star" style="top: 70%; left: 85%; animation-delay: 1.8s;"></div><!-- Decorative moon -->
+   <div class="moon"></div><!-- ============================================ --> <!-- HEADER SECTION - Practice Name & Details    --> <!-- ============================================ -->
+   <header style="text-align: center; padding: 4rem 1.5rem; position: relative;">
+    <div class="max-width-container"><!-- Practice Name -->
+     <h1 class="heading-font" style="font-size: 3rem; font-weight: 300; margin-bottom: 1rem; color: #ddbbff;">Talk Heart Counseling</h1><!-- Therapist Name -->
+     <p style="font-size: 1.5rem; margin-bottom: 1rem; color: #c4a7d9;">Lisa Marie Paradis, LPCC</p><!-- Tagline -->
+     <p style="font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; color: #e8d9f5;">A safe space for healing and transformation</p><!-- Additional Details -->
+     <div style="margin-top: 1.5rem;">
+      <p style="font-size: 1.125rem; font-weight: 300; margin-bottom: 0.5rem; color: #c4a7d9;">Tending to the Heart &amp; Spirit through Imaginal Inspiration</p>
+      <p style="font-size: 1.125rem; font-weight: 300; margin-bottom: 0.5rem; color: #c4a7d9;">For Adults and Children</p>
+      <p style="font-size: 1rem; font-weight: 300; color: #e8d9f5;">In-Person &amp; Remote Sessions Available</p>
+     </div>
+    </div>
+   </header><!-- ============================================ --> <!-- HERO IMAGE SECTION                           --> <!-- Replace the placeholder with your own image --> <!-- ============================================ -->
+   <section style="padding: 2rem 1.5rem;">
+    <div class="max-width-container">
+     <div class="card-glow" style="height: 400px; overflow: hidden;"><!-- Replace this placeholder image with your own by updating the src attribute --> <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400'%3E%3Crect fill='%234a2c5e' width='800' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23c4a7d9'%3EFeatured Image - Click to replace%3C/text%3E%3C/svg%3E" alt="Featured welcoming image" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+     </div>
+    </div>
+   </section><!-- ============================================ --> <!-- SERVICES SECTION                             --> <!-- List of therapy services offered             --> <!-- ============================================ -->
+   <section>
+    <div class="max-width-container-lg">
+     <h2 class="heading-font" style="font-size: 2.5rem; font-weight: 300; text-align: center; margin-bottom: 3rem; color: #ddbbff;">Services Offered</h2>
+     <div class="services-grid"><!-- Service Card: Individual Adult Therapy -->
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        💜
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Individual Adult Therapy</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Personalized depth-oriented therapy that addresses anxiety, depression, life transitions, and relationship challenges. We explore underlying emotional patterns and beliefs through compassionate curiosity, uncovering root causes for lasting transformation.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🌟
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Child Therapy</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Gentle, developmentally appropriate support for children navigating emotional challenges, behavioral concerns, and developmental transitions. Creating a safe space where young ones can express themselves authentically.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🎨
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Art Therapy</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Express what words cannot capture through creative exploration. Art therapy accesses deeper layers of the psyche, helping you process emotions, trauma, and memories through visual and tactile mediums.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        ✨
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">EMDR</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Evidence-based trauma therapy that helps reprocess difficult memories and experiences. EMDR reduces the emotional charge of traumatic events, allowing for healing and integration with compassionate support.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🌙
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Dream Work</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Explore the rich symbolic language of your dreams to access unconscious wisdom. Dream analysis reveals patterns, uncovers hidden insights, and connects you with the deeper layers of your psyche.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🧸
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Play Therapy</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Children naturally communicate through play. This experiential approach allows young clients to process emotions, develop coping skills, and work through challenges in their native language of imagination and play.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🏖️
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Sand Play</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Create miniature worlds in sand to access the unconscious and express internal experiences. This powerful Jungian technique bypasses verbal defenses, allowing deeper therapeutic work and symbolic expression.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        🍄
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Psychedelic Integration</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Process and integrate transformative psychedelic experiences in a safe, supportive setting. We explore insights, visions, and emotional content to support lasting positive change and meaning-making.</p>
+      </div>
+      <div class="card-glow service-card" style="padding: 1.5rem;">
+       <div style="font-size: 2rem; margin-bottom: 0.75rem;">
+        ⭐
+       </div>
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Archetypal Astrology</h3>
+       <p style="font-size: 0.875rem; line-height: 1.6; color: #c4a7d9;">Understand your psychological patterns and life themes through the lens of archetypal astrology. This depth approach reveals the collective and personal dimensions of your unique cosmic blueprint.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- ============================================ --> <!-- ABOUT SECTION                                --> <!-- Profile photo, approach, insurance, bio      --> <!-- ============================================ -->
+   <section>
+    <div class="max-width-container">
+     <div class="card-glow" style="padding: 2rem;"><!-- Section Title -->
+      <h2 class="heading-font" style="font-size: 2.5rem; font-weight: 300; text-align: center; margin-bottom: 1.5rem; color: #ddbbff;">About Your Journey</h2><!-- Profile Photo - Replace with your own image -->
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+       <div class="card-glow" style="width: 250px; height: 250px; overflow: hidden;"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect fill='%234a2c5e' width='250' height='250'/%3E%3Ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-size='48'%3E👤%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%23c4a7d9'%3EYour Photo Here%3C/text%3E%3C/svg%3E" alt="Profile photo of Lisa Marie Paradis" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+       </div>
+      </div><!-- Therapeutic Approach & Insurance -->
+      <div style="margin-bottom: 1.5rem; text-align: center;">
+       <h3 class="heading-font" style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Therapeutic Approach</h3>
+       <p style="font-size: 1.125rem; margin-bottom: 1rem; color: #c4a7d9;">Depth Psychology &amp; Jungian Analysis</p><!-- Insurance Information -->
+       <div class="card-glow" style="margin-top: 1.5rem; padding: 1.5rem; display: inline-block;">
+        <h4 class="heading-font" style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.75rem; color: #ddbbff;">Insurance Accepted</h4>
+        <div class="insurance-grid" style="font-size: 0.875rem; color: #c4a7d9;">
+         <div>
+          • Medicaid
+         </div>
+         <div>
+          • Aetna
+         </div>
+         <div>
+          • BlueCross BlueShield
+         </div>
+         <div>
+          • Magellan
+         </div>
+         <div>
+          • Presbyterian
+         </div>
+         <div>
+          • UnitedHealthcare (UHC | UBH)
+         </div>
+        </div>
+       </div>
+      </div><!-- Biography / About Text -->
+      <div style="font-size: 1.125rem; line-height: 1.6; color: #e8d9f5;"><!-- Paragraph 1: Approach Overview -->
+       <p style="margin-bottom: 1.5rem;">In today's stressful times, anxiety and hopelessness have become the norm rather than the exception. Having a place to safely explore mixed emotions and responses to chaotic times can be invaluable. I use holistic and experiential oriented approaches to address the mental, physical, and spiritual components of struggles. I aim to bring compassionate curiosity while helping you uncover the underlying emotional patterns and beliefs contributing to symptoms.</p><!-- Paragraph 2: Methodology -->
+       <p style="margin-bottom: 1.5rem;">Informed by depth and relational psychology, I look at your dreams, memories, and beliefs to uncover root causes and the personal as well as collective nature of symptoms. This dynamic approach has the ability for lasting transformation. When self-awareness and acceptance are gained through insight, a sustained freedom to behave differently is possible.</p><!-- Paragraph 3: Techniques & Philosophy -->
+       <p style="margin-bottom: 1.5rem;">My approach weaves together depth psychology, Jungian analysis, art therapy, and somatic practices. I'm especially drawn to working with dreams, symbols, and creative expression as pathways to understanding ourselves more deeply. Whether you're navigating life transitions, healing from trauma, or seeking greater meaning and purpose, I walk alongside you with curiosity, warmth, and respect for your unique journey.</p><!-- Paragraph 4: Personal Background -->
+       <p>Growing up in a family that valued both psychological insight and holistic health, I learned early that healing isn't just about fixing what's broken—it's about nurturing what wants to grow. I work with adults and children, offering a space where the unspoken can find voice through words, art, play, or simply being present together.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- ============================================ --> <!-- GALLERY SECTION                              --> <!-- Three image placeholders with divider        --> <!-- ============================================ -->
+   <section>
+    <div class="max-width-container-lg"><!-- Decorative Divider -->
+     <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 3rem;">
+      <svg width="200" height="60" viewbox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="30" r="8" fill="#ddbbff" opacity="0.6" /> <circle cx="70" cy="30" r="4" fill="#c4a7d9" opacity="0.5" /> <circle cx="130" cy="30" r="4" fill="#c4a7d9" opacity="0.5" /> <circle cx="45" cy="30" r="2" fill="#e8d9f5" opacity="0.4" /> <circle cx="155" cy="30" r="2" fill="#e8d9f5" opacity="0.4" /> <path d="M 20 30 Q 60 20, 80 30" stroke="#ddbbff" stroke-width="1" fill="none" opacity="0.4" /> <path d="M 120 30 Q 140 20, 180 30" stroke="#ddbbff" stroke-width="1" fill="none" opacity="0.4" /> <circle cx="100" cy="15" r="3" fill="#ddbbff" opacity="0.3">
+        <animate attributename="opacity" values="0.3;0.8;0.3" dur="3s" repeatcount="indefinite" />
+       </circle> <circle cx="85" cy="20" r="2" fill="#c4a7d9" opacity="0.3">
+        <animate attributename="opacity" values="0.3;0.7;0.3" dur="4s" repeatcount="indefinite" />
+       </circle> <circle cx="115" cy="20" r="2" fill="#c4a7d9" opacity="0.3">
+        <animate attributename="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatcount="indefinite" />
+       </circle>
+      </svg>
+     </div><!-- Gallery Images Grid -->
+     <div class="gallery-grid"><!-- Gallery Image 1: Art & Creativity -->
+      <div class="card-glow" style="height: 300px; overflow: hidden;"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%234a2c5e' width='400' height='300'/%3E%3Ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-size='48'%3E🎨%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%23c4a7d9'%3EArt &amp; Creativity%3C/text%3E%3C/svg%3E" alt="Art and creative expression" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+      </div><!-- Gallery Image 2: Nature & Healing -->
+      <div class="card-glow" style="height: 300px; overflow: hidden;"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%234a2c5e' width='400' height='300'/%3E%3Ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-size='48'%3E🌿%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%23c4a7d9'%3ENature &amp; Healing%3C/text%3E%3C/svg%3E" alt="Nature and natural healing" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+      </div><!-- Gallery Image 3: Inspiration -->
+      <div class="card-glow" style="height: 300px; overflow: hidden;"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%234a2c5e' width='400' height='300'/%3E%3Ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-size='48'%3E✨%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%23c4a7d9'%3EInspiration%3C/text%3E%3C/svg%3E" alt="Inspiration and transformation" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+      </div>
+     </div>
+    </div>
+   </section><!-- ============================================ --> <!-- CONTACT SECTION                              --> <!-- Email and phone contact information          --> <!-- ============================================ -->
+   <section style="padding: 4rem 1.5rem;">
+    <div class="max-width-container-md" style="text-align: center;"><!-- Contact Title -->
+     <h2 class="heading-font" style="font-size: 2.5rem; font-weight: 300; margin-bottom: 1.5rem; color: #ddbbff;">Begin Your Journey</h2><!-- Contact Description -->
+     <p style="font-size: 1.125rem; margin-bottom: 2rem; color: #e8d9f5;">Ready to take the first step? Reach out today to schedule a consultation.</p><!-- Contact Information Card -->
+     <div class="card-glow" style="padding: 2rem; display: inline-block;"><!-- Email -->
+      <div style="margin-bottom: 1rem;"><a href="mailto:lisamarieparadis@gmail.com" style="font-size: 1.5rem; color: #c4a7d9; display: inline-block;"> 📧 lisamarieparadis@gmail.com </a>
+      </div><!-- Phone -->
+      <div style="margin-bottom: 1rem;"><a href="tel:+15058593077" style="font-size: 1.5rem; color: #c4a7d9; display: inline-block;"> 📞 505-859-3077 </a>
+      </div><!-- Closing Message -->
+      <p style="font-size: 0.875rem; color: #e8d9f5;">I look forward to connecting with you</p>
+     </div>
+    </div>
+   </section><!-- ============================================ --> <!-- FOOTER                                       --> <!-- ============================================ -->
+   <footer style="padding: 2rem 1.5rem; text-align: center;">
+    <p style="font-size: 0.875rem; color: #9b8aaa;">© Talk Heart Counseling - Lisa Marie Paradis, LPCC</p>
+    <p style="font-size: 0.75rem; margin-top: 0.5rem; color: #9b8aaa;">Providing compassionate, holistic therapy services</p>
+   </footer>
+  </div>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba0a4b6e4391f2d',t:'MTc2Nzc1OTQyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
